@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title></title>
+</head>
+ 
+<body>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RPS Duel!</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap CDN-->
+  <link id="myStyle" rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
+ 
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+
+</head>
+
+<style type="text/css">
+
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 6vw;
+  text-align: center;
+}
+
+h2 {
+
+    font-size: 50px;
+}
+
+h5{
+
+    text-align: center;
+    color: green;
+}
+
+h6 { 
+
+margin-top: 0px;
+text-align: center;
+}
+
+.panel-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.panel-body {
+
+    text-align: center;
+    font-weight: bolder;
+}
+
+#joinButton {
+    display:block;
+    margin:auto;
+    width: 100px;
+    margin-top: 10px;
+}
+
+#themeButton {
+
+display:block;
+    margin:auto;
+    width: 100px;
+    margin-top: 10px;
+
+}
+
+.scoreHolder {
+
+    font-weight: bolder;
+}
+
+.hiddenOne {
+
+    display: none;
+}
+
+
+#loadingPic {
+
+    display:block;
+    margin:auto;
+    width: 200px;
+    height: auto;
+    margin-top: 0px;
+}
+
+.ee {
+
+display:block;
+    margin:auto;
+    width: 100px;
+    margin-top: 10px;
+
+}
+
+.floatLeft {
+
+    float: left;
+}
+
+.floatRight {
+
+    float: right;
+}
+
+.winnerClass {
+
+    color: green;
+
+}
+
+.loserClass {
+
+    color: red;
+}
+
+.glow {
+
+    -webkit-box-shadow:0 0 20px blue; 
+-moz-box-shadow: 0 0 20px blue; 
+box-shadow:0 0 20px blue;
+}
+
+.shakeMe {
+  animation: shake 2.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-15px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(15px, 0, 0);
+  }
+}
+
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 1s infinite;
+   -moz-animation: flickerAnimation 1s infinite;
+   -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+}
+
+</style>
+<body>
+
+<div class = "container">
+
+<br class = "myNameIs">
+<br class = "myNameIs">
+
+
+
+<h1 id="titleText">the grand puppy hotel</h1>
+
+<br class = "myNameIs">
+<h6 style="font-size: 20px" class = "myNameIs">by JJAG</h6>
+
+
+
+<br>
+<div class = "row">
+        <div class="col-lg-4 col-lg-offset-4">
+              <form id="signup" name="signup" method="post" action="/signup">
+                <label for="email">Email Address:</label>
+                <input class="text form-control" name="email" type="email" />
+                <br>
+                <label for="firstname">First Name:</label>
+                <input class="text form-control" name="firstname" type="text" />
+                <br>
+                <label for="lastname">Last Name:</label>
+                <input class="text form-control" name="lastname" type="text" />
+                <br>
+                <label for="password">Password:</label>
+                <input class="text form-control" name="password" type="password" />
+                <br>
+                <input class="btn btn-success" type="submit" value="Sign Up" />
+              </div>
+          </div>
+</div>
+
+
+
+</div>
+
+
+
+<br>
+
+<br>
+
+
+
+
+
+
+    {{!-- <form id="signup" name="signup" method="post" action="/signup">
+        <label for="email">Email Address</label>
+        <input class="text" name="email" type="email" />
+        <label for="firstname">Firstname</label>
+        <input name="firstname" type="text" />
+        <label for="lastname">Lastname</label>
+        <input name="lastname" type="text" />
+        <label for="password">Password</label>
+        <input name="password" type="password" />
+        <input class="btn" type="submit" value="Sign Up" />
+    </form> --}}
+ 
+</body>
+ 
+</html>
